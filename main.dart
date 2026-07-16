@@ -29,8 +29,11 @@ class QuestCard extends StatelessWidget {
 
   void _launchGPS() async {
     final Uri url = Uri.parse(gpsurl);
-    if (await canLaunchUrl(url)) {
+    try {
+
       await launchUrl(url, mode: LaunchMode.externalApplication);
+    } catch (e) {
+      debugPrint("Could not launch GPS URL: $e");
     }
   }
 
@@ -155,7 +158,7 @@ class QuestCard extends StatelessWidget {
                             children: [
                               Icon(
                                 isCompleted ? Icons.check_circle : Icons.radio_button_unchecked,
-                                color: isCompleted ? Color(0xFF165B2E) : Colors.grey,
+                                color: isCompleted ? const Color(0xFF165B2E) : Colors.grey,
                                 size: 28,
                               ),
                               const SizedBox(height: 4),
@@ -296,7 +299,7 @@ class _TopState extends State<Top> {
               imageurl: "assets/images/Casbah.jpg",
               gpsurl: "https://www.google.com/maps/search/?api=1&query=36.7833,3.0603",
               isCompleted: _completedQuests.contains("casbah_algiers"),
-              isAudioPlaying: _completedQuests.contains("casbah_algiers"),
+              isAudioPlaying: _currentlyPlayingId == "casbah_algiers" && _isplaying,
               onComplete: () => _toggleQuestCompletion("casbah_algiers"),
               onListen: () => _toggleAudio("casbah_algiers", "audio/Algeirs.mp3"),
             ),
@@ -306,7 +309,7 @@ class _TopState extends State<Top> {
                 imageurl: "assets/images/tipaza_mausoleum.jpg",
                 gpsurl: 'https://www.google.com/maps/search/?api=1&query=36.365,6.614',
                 isCompleted: _completedQuests.contains("tipaza_mausoleum"),
-                isAudioPlaying: _completedQuests.contains("tipaza_mausoleum"),
+                isAudioPlaying: _currentlyPlayingId == "tipaza_mausoleum" && _isplaying,
                 onComplete: () => _toggleQuestCompletion("tipaza_mausoleum"),
                 onListen: () => _toggleAudio("tipaza_mausoleum", "audio/Tipaza.mp3")),
             QuestCard(id: 'constantine_bridges',
@@ -315,7 +318,7 @@ class _TopState extends State<Top> {
                 imageurl: "assets/images/Bridges.jpg",
                 gpsurl: 'https://www.google.com/maps/search/?api=1&query=36.365,6.614',
                 isCompleted: _completedQuests.contains("constantine_bridges"),
-                isAudioPlaying: _completedQuests.contains("constantine_bridges"),
+                isAudioPlaying: _currentlyPlayingId == "constantine_bridges" && _isplaying,
                 onComplete: () => _toggleQuestCompletion("constantine_bridges"),
                 onListen: () => _toggleAudio("constantine_bridges", "audio/Constantine.mp3")),
             QuestCard(id: "sankoshi_pizza",
@@ -382,6 +385,8 @@ class _TopState extends State<Top> {
                 isAudioPlaying: _currentlyPlayingId == "tassili_djanet" && _isplaying,
                 onComplete: () => _toggleQuestCompletion("tassili_djanet"),
                 onListen: () => _toggleAudio("tassili_djanet", "audio/Tassili.mp3")),
+
+
             const SizedBox(height: 40),
           ],
         ),
