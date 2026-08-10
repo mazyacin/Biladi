@@ -45,6 +45,7 @@ map url here ,5 Location this is a small text that shows up bellow the image you
 is for the complete button you put the Id inside it  it checks if you already completed the quest, 7 isAudioPlaying this is for the audio button you also put in it the id it checkes 
 if audio is playing,8 onComplete this toggles the completion status  put in Id,9 onListen this toggles the audio button  put in Id and audio path, i also uploaded a  picture to 
 give you an example of a filled QuestCard
+
 **Step 4** : the Icon for the app this is what shows up when you are about to enter the app on phone , you can make it whatever you want just make sure its 1024x1024 pixels
 
 **Step 5**: your done just run flutter build apk --released to get the .apk   ( for an examble check the photo in the Explained folder)
