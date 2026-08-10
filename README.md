@@ -26,6 +26,8 @@ The compiled Android APK (Algeria example) is available on the releases page of 
 https://github.com/user-attachments/assets/b7b1e6e0-8d6b-430d-b10d-7197257829e3
 
 
+
+
 **To know how to use this template checkout the /Explained folder**.
 
 so the code thing is you can make a version off this app for your country really easily even food or anything im going to break this into steps: 
@@ -42,3 +44,4 @@ give you an example of a filled QuestCard
 Step 4 : the Icon for the app this is what shows up when you are about to enter the app on phone , you can make it whatever you want just make sure its 1024x1024 pixels
 Step 5 : your done just run flutter build apk --released to get the .apk 
 
+**NOTE**: to use the source code you need an ide that works with flutter sdk which is a framework to make mobile apps these IDEs are VsCode and Android studio(when using android studio the app will only compile for android devices ) then install flutter sdk and your ide (just follow a tutorial on youtube) then make a new flutter project and replace the pubspec.yaml and pubspec.lock with the ones in this repo then run **flutter clean flutter pub get** command then replace the source code in the /lib folder with the source code from this repo
