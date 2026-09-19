@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/c471ed2d-e37e-49cf-a522-365ee9ed3bf4
 
 **Biladi is an example of a template i made to make tourist apps** 
 
-It comes with a **fully working example for Algeria ( only works on android)**, but the template itself is country-agnostic – you can rebrand it for any city, region, or even food tours in 5 minutes by editing a single file.
+It comes with a **fully working example for Algeria (APK format)**, but the template itself is very customizable   – you can rebrand it for any **city, region, or even culinary**  in just an **Hour**
 
 
 This project started as a tourist app for Algeria, but evolved into a template that anyone can use to create their own tourist guide app.
@@ -27,7 +27,7 @@ This project started as a tourist app for Algeria, but evolved into a template t
 
 ---
 
-**you can make a version off this app for your country really easily even food or anything im going to break this into steps**: 
+**you can make a version of this app for your idea , Here are the Steps to do that **: 
 
 **Step 1**: idea , get assets which are images and audio ,images you can get them from google and the audio you either make them with your own sound 
 or you can go to voicertool.com which has text to speech  for free and you can choose which sound ( the one im using is Brian)
@@ -45,6 +45,6 @@ give you an example of a filled QuestCard
 
 **Step 4** : the Icon for the app this is what shows up when you are about to enter the app on phone , you can make it whatever you want just make sure its 1024x1024 pixels
 
-**Step 5**: your done just run flutter build apk --released to get the .apk   ( for an example check the photo in the Explained folder)
+**Step 5**: your done just run "flutter build apk --released" to get the .apk and .ipa  ,you will find them in the "/build"folder
 ---
-**NOTE**: to use the source code you need an ide that works with flutter sdk which is a framework to make mobile apps these IDEs are VsCode and Android studio(when using android studio the app will only compile for android devices ) then install flutter SDK and your ide (then make a new flutter project and replace the pubspec.yaml and pubspec.lock with the ones in this repo then run **flutter clean flutter pub get** command then replace the source code in the /lib folder with the source code from this repo
+**NOTE**: to use the source code you need an IDE that works with flutter SDK which is a framework to make mobile apps these IDEs are VsCode and Android studio(**Note that android studio only compiles for android devices in .APK format**) then install flutter SDK and your ide then make a new flutter project and replace the pubspec.yaml and pubspec.lock with the ones in this repo then run **flutter clean flutter pub get** command then replace the source code in the /lib folder with the source code from this repo and add
