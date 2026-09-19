@@ -1,4 +1,4 @@
-# Biladi
+<img width="205" height="79" alt="image" src="https://github.com/user-attachments/assets/f2893002-b5f9-45f9-887a-a1eebb3fec01" /># Biladi
 
 
 https://github.com/user-attachments/assets/c471ed2d-e37e-49cf-a522-365ee9ed3bf4
@@ -47,4 +47,5 @@ give you an example of a filled QuestCard
 
 **Step 5**: your done just run "flutter build apk --released" to get the .apk and .ipa  ,you will find them in the "/build"folder
 ---
-**NOTE**: to use the source code you need an IDE that works with flutter SDK which is a framework to make mobile apps these IDEs are VsCode and Android studio(**Note that android studio only compiles for android devices in .APK format**) then install flutter SDK and your ide then make a new flutter project and replace the pubspec.yaml and pubspec.lock with the ones in this repo then run **flutter clean flutter pub get** command then replace the source code in the /lib folder with the source code from this repo and add
+**NOTE**: to use the source code you need an IDE that works with flutter SDK which is a framework to make mobile apps these IDEs are VsCode and Android studio(**Note that android studio only compiles for android devices in .APK format**) then install flutter SDK and your ide then make a new flutter project and replace the pubspec.yaml and pubspec.lock with the ones in this repo then run **flutter clean flutter pub get** command then replace the source code in the /lib folder with the source code from this repo and add your images and sounds to a new  "**assets**" folder (you make it) and make another folder inside it name them "**audio**" and "**images**" <img width="205" height="79" alt="image" src="https://github.com/user-attachments/assets/bbefe62d-b68d-4cbf-a8cc-8a7ebd6e73a8" />
+
