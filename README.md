@@ -1,5 +1,6 @@
 # Biladi
-https://github.com/user-attachments/assets/b7b1e6e0-8d6b-430d-b10d-7197257829e3
+![Uploading image.png…]()
+
 **Biladi is an example of a template i made to make tourist apps** 
 
 It comes with a **fully working example for Algeria ( only works on android)**, but the template itself is country-agnostic – you can rebrand it for any city, region, or even food tours in 5 minutes by editing a single file.
