@@ -12,11 +12,10 @@ It comes with a **fully working example for Algeria (APK format)**, but the temp
 
 This project started as a tourist app for Algeria, but evolved into a template that anyone can use to create their own tourist guide app.
 ---
-**Key Features:**
+**Features of the Algeria Example:**
 - Full tourist guide structure **places**, **descriptions**, **images**
 - finish quest button,and hear story button with saving when you close the app
-- Easy to rebrand for your Country– change the some code and your done
-- Works on **Android** and **IOS**
+- Works on **Android** only
 
 
 
